@@ -243,18 +243,18 @@
   -webkit-animation: MoveUpDown 2.5s linear infinite;
           animation: MoveUpDown 2.5s linear infinite;
   position: absolute;
-  width: 30%;
+  width: 175px;
 }
 
 @media only screen and (min-width: 1050px) {
   .hero .arrow {
-    width: 20%;
+    width: 200px;
   }
 }
 
-@media only screen and (min-width: 1550px) {
+@media only screen and (min-width: 1250px) {
   .hero .arrow {
-    width: 15%;
+    width: 225px;
   }
 }
 
