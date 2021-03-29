@@ -1,0 +1,27 @@
+.footer {
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    background-color: #3b3b3b;
+    border-top: 3px solid #6fd7bc;
+    padding: 2rem;
+    cursor: pointer;
+
+    :not(:last-child) {
+        margin-right: 3rem;
+    }
+
+    span {
+        transition: all 0.3s ease-out;
+    }
+
+    span:hover {
+        transform: scale(1.3);
+    }
+
+    a {
+        color: #e2e2e2;
+        text-decoration: none;
+    }
+}
