@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     min-width: 40vw;
+    // grid-gap: 0.05rem;
 
     .image-container {
         overflow: hidden;
