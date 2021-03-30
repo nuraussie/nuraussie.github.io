@@ -143,7 +143,7 @@
             transform: translateX(0%);
   }
   .nav-links a {
-    font-size: 20px;
+    font-size: 18px;
   }
   .nav-links li {
     opacity: 1;
@@ -474,7 +474,7 @@
   display: grid;
   -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  min-width: 50vw;
+  min-width: 40vw;
 }
 
 .gallery .image-container {
