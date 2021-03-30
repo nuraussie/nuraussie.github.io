@@ -1,5 +1,6 @@
 .gallery {
     display: grid;
+    padding-top: 10vh;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     min-height: 100vh;
     grid-gap: 0.05rem;
