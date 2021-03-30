@@ -1,8 +1,8 @@
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    min-width: 40vw;
-    // grid-gap: 0.05rem;`
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    min-height: 100vh;
+    grid-gap: 0.05rem;
 
     .image-container {
         overflow: hidden;

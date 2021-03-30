@@ -23,8 +23,8 @@
 }
 
 .nav-bar.fixed {
-  position: relative;
-  z-index: 0;
+  position: fixed;
+  z-index: 1;
   background: #3b3b3b;
 }
 
@@ -472,9 +472,10 @@
 .gallery {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  min-width: 40vw;
+  -ms-grid-columns: (minmax(450px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  min-height: 100vh;
+  grid-gap: 0.05rem;
 }
 
 .gallery .image-container {
