@@ -18,7 +18,7 @@
 
 .modal p {
     color: white;
-    font-size: 2rem;
+    font-size: 1rem;
     position: absolute;
     bottom: 5%;
     left: 50%;
@@ -41,6 +41,10 @@
 @media only screen and (min-width: 768px) {
     .full-image.open {
         transform: translate(-50%, -50%) scale(0.8);
+    }
+
+    .modal p {
+        font-size: 2rem;
     }
 }
 
