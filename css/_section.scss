@@ -23,6 +23,10 @@
     .image-container img:hover {
         transform: scale(1.04);
     }
+
+    &.circle {
+        border-radius: 25px;
+    }
 }
 
 .subtitle {

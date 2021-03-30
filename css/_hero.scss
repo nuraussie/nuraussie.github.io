@@ -29,11 +29,16 @@
         position: absolute;
         width: 150px;
     }
+
+    .arrow {
+        padding-left: 5vw;
+    }
 }
 
 @media only screen and (min-width: 1050px) {
     .hero {
         .arrow {
+            padding-left: unset;
             width: 160px;
         }
     }   

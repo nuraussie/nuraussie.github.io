@@ -257,8 +257,13 @@
   width: 150px;
 }
 
+.hero .arrow {
+  padding-left: 5vw;
+}
+
 @media only screen and (min-width: 1050px) {
   .hero .arrow {
+    padding-left: unset;
     width: 160px;
   }
 }
@@ -298,6 +303,10 @@
 .featured .image-container img:hover {
   -webkit-transform: scale(1.04);
           transform: scale(1.04);
+}
+
+.featured.circle {
+  border-radius: 25px;
 }
 
 .subtitle {
