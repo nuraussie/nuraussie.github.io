@@ -305,10 +305,6 @@
           transform: scale(1.04);
 }
 
-.featured.circle {
-  border-radius: 25px;
-}
-
 .subtitle {
   text-transform: uppercase;
   font-weight: bold;
@@ -346,7 +342,6 @@
     -ms-grid-columns: 40% auto;
         grid-template-columns: 40% auto;
     margin-left: 12em;
-    margin-top: 1em;
     padding-top: 5em;
     -webkit-column-gap: 5vw;
             column-gap: 5vw;
@@ -501,6 +496,115 @@
   .gallery {
     -ms-grid-columns: (minmax(20vw, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+  }
+}
+
+.about {
+  min-height: calc(100vh - 80px);
+  position: relative;
+  padding: 12em 2em 2em 2em;
+}
+
+.about .image-container img {
+  width: 100%;
+  margin-top: 7.5vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: 5px 5px #3b3b3b;
+          box-shadow: 5px 5px #3b3b3b;
+}
+
+.about .icons {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .icons > a {
+  margin: 4px;
+}
+
+.about .icons a {
+  width: 50px;
+  height: 50px;
+  padding: 15px;
+  background: #3b3b3b;
+  border-radius: 50%;
+  text-align: center;
+  color: #e2e2e2;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.about .icons a:hover {
+  background: #e2e2e2;
+  color: #3b3b3b;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.about-subtitle {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #6fd7bc;
+  letter-spacing: .2em;
+  font-size: .75em;
+}
+
+.about-title {
+  color: #3b3b3b;
+  font-weight: bold;
+  font-size: 1.6em;
+  margin-top: .1em;
+  margin-bottom: .2em;
+  display: block;
+  text-decoration: none;
+}
+
+.about-desc {
+  color: #3b3b3b;
+  margin-bottom: 2em;
+  font-size: 1em;
+  line-height: 2.5em;
+  font-weight: 500;
+}
+
+@media only screen and (min-width: 800px) {
+  .about {
+    text-align: left;
+  }
+  .about {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 60% 40%;
+        grid-template-columns: 60% 40%;
+    margin-left: 8em;
+    padding-top: 5em;
+    -webkit-column-gap: 5vw;
+            column-gap: 5vw;
+  }
+  .about-left {
+    display: -ms-grid;
+    display: grid;
+    place-content: center;
+    padding-bottom: 2em;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .about {
+    padding: 4em 14em 2em 0;
   }
 }
 
