@@ -4,7 +4,7 @@
     padding: 12em 2em 2em 2em;
 
     .image-container img {
-        width: 100%;
+        width: 50%;
         margin-top: 7.5vh;
         box-sizing: border-box;
         object-fit: cover;
@@ -74,10 +74,15 @@
     }
     .about {
         display: grid;
-        grid-template-columns: 60% 40%;
-        margin-left: 8em;
-        padding-top: 5em;
+        grid-template-columns: 75% 25%;
+        // margin-left: 8em;
+        padding: 4em 6em 2em 4em;
+        // padding-top: 5em;
         column-gap: 5vw;
+
+        .image-container img {
+            width: 100%;
+        }
     }
 
     .about-left {
@@ -89,7 +94,7 @@
 
 @media only screen and (min-width: 1050px) {
     .about {
-        padding: 4em 14em 2em 0;
+        padding: 4em 14em 2em 4em;
     }
 }
 
