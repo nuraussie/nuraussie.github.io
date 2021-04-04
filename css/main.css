@@ -148,9 +148,8 @@
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
   }
-  .nav-links li:hover {
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3);
+  .nav-links li:hover a {
+    color: #6fd7bc;
   }
   .burger {
     display: none;

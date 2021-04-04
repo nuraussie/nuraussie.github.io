@@ -125,7 +125,10 @@
     }
 
     .nav-links li:hover {
-        transform: scale(1.3);
+        // transform: scale(1.3);
+        a {
+            color: #6fd7bc;
+        }
     }
 
     .burger {
