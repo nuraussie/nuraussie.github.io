@@ -13,6 +13,27 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="/css/main.css">
+    <script type="text/javascript">
+        (function() {
+            console.log("Hi");
+            $('form > input').keyup(function() {
+                var empty = false;
+                $('form > input').each(function() {
+                    if($(this).val() == '') {
+                        empty = true;
+                    }
+                });
+
+                if(empty) {
+                    $('#send').hide();
+                    $('#send').attr('disabled', 'disabled');
+                } else {
+                    $('#send').show();
+                    $('#send').removeAttr('disabled');
+                }
+            });
+        });
+    </script>
 </head>
 <body>
     <nav class="nav-bar fixed">
@@ -39,11 +60,11 @@
         <div class="border"></div>
 
         <form action="https://formspree.io/f/xayayqgy" class="contact-form" method="POST">
-            <input type="text" name="name" class="contact-form-text" placeholder="Name">
-            <input type="email" name="_replyto" class="contact-form-text" placeholder="Email">
-            <input type="text" name="phone" class="contact-form-text" placeholder="Phone">
-            <textarea name="message" class="contact-form-text" placeholder="Message"></textarea>
-            <input type="submit" class="contact-form-btn" value="Send">
+            <input type="text" name="name" class="contact-form-text" placeholder="Name" required>
+            <input type="email" name="_replyto" class="contact-form-text" placeholder="Email" required>
+            <input type="text" name="phone" class="contact-form-text" placeholder="Phone" required>
+            <textarea name="message" class="contact-form-text" placeholder="Message" required></textarea>
+            <input type="submit" id="send" class="contact-form-btn" value="Send">
         </form>
     </div>
 
